@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colours lifted from the Figma frame (node 3678:3367). */
+  --color-ink: #0e1e1d;
+  --color-card: #f1faff;
+
+  --font-sans: var(--font-almarai), ui-sans-serif, system-ui, sans-serif;
+}
+
+/* The feature row is a scroll strip; the bar itself is not part of the design. */
+@utility no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
